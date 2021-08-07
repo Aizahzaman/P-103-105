@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <i><h1 class="btn btn-default" style="font-size: 50px; width: 500px;">Image Recognizer</h1></i>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+
+      <label class="items">Me</label>
+      <hr style="height: 50px;">
+      <br>
+      <label class="items">Brother</label>
+      <hr>
+      <br>
+      <label class="items">Father</label>
+      <hr>
+      <br>
+      <br>
+      <br>
+
+      <label style="font-size: 20px;">Webcam View - </label>
+      <div id="camera" style="width: 320px; height: 320px ;"></div>
+      <br><br>
+      <label style="font-size: 20px;">Image Taken - </label>
+      <div id="img_taken" style="border: 10px solid lightcoral; border-radius: 15px; width: 320px; height: 320px ;"></div>
+      <br><br>
+      <button class="btn btn-danger" onclick="take_img()">Take Image</button>
+      <br><br>
+      <button class="btn btn-success" onclick="identify_img()">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Object :  <span id="object" style="font-size: 22px;"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="accuracy" style="font-size: 22px;"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
